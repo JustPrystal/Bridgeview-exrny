@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@font-face {
-    font-family: 'avenir';
-    src: url(../fonts/avenir_roman_12.otf);
-}
+
+@import 'vars'; 
+
 *,::after,::before{
     margin: 0;
     padding: 0;
@@ -49,6 +48,7 @@ header{
 .hero{
     position: relative;
     overflow: hidden;
+    margin-bottom: 74px;
     video{
         position: absolute;
         z-index: -1;
@@ -84,6 +84,115 @@ header{
                 font-family: 'avenir';
                 border-radius: 4px;
             }
+        }
+    }
+}
+// .building{
+//     .content{
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         padding: 0px 20px;
+//         margin-bottom: 42px;
+//         .heading{
+//             margin-bottom: 34px;
+//             h2{
+//                 font-size: 48px;
+//                 position: relative;
+//                 color: #001330;
+//                 line-height: 120%;
+//                 font-family: 'chronicle';
+//                 text-align: center;
+//                 text-transform: uppercase;
+//                 &::after{
+//                     content: "";
+//                     background: #170f49;
+//                     position: absolute;
+//                     height: 2px;
+//                     width: 50px;
+//                     bottom: 0;
+//                     left: 48%;
+//                 }
+//             }
+//         }
+//         p{
+//             font-size: 18px;
+//             font-family: "Open Sans", sans-serif;
+//             text-align: center;
+//             color: #5A5D64;
+//         }
+//     }
+// }
+.views{
+    margin-top: 144px;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        margin-bottom: 84px;
+        .image-wrapper{
+            margin-bottom: 80px;
+        }
+        .content-wrap{
+            .heading{
+                margin-bottom: 58px;
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    color: #001330;
+                    line-height: 120%;
+                    font-family: 'chronicle';
+                    text-align: center;
+                    text-transform: uppercase;
+                    &::after{
+                        content: "";
+                        background: #170f49;
+                        position: absolute;
+                        height: 2px;
+                        width: 50px;
+                        bottom: 0;
+                        left: 48%;
+                    }
+                }
+            }
+            p{
+                font-size: 20px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                color: #5A5D64;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.views-group{
+    padding: 96px 0px;
+    background-color: #F7F7F7;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        .view{
+            width: 100%;
+            img{
+                margin-bottom: 48px;
+                width: 100%;
+            }
+            h3{
+                font-size: 28px;
+                font-family: 'chronicle';
+                text-align: center;
+                color: #332E2F;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 15px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                color: #5A5D64;
+            }   
         }
     }
 }
