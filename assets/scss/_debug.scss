@@ -1,0 +1,10 @@
+@mixin responsive($breakpoint) { 
+    @if map-has-key($custom-breakpoints, $breakpoint) {
+        @media (max-width: #{map-get(map-get($custom-breakpoints, $breakpoint), maxSize)}) {
+          @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint `#{$breakpoint}` does not exist. Check case sensitivity.";
+    }
+  }
