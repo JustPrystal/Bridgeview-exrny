@@ -26,6 +26,9 @@ header{
                 @include responsive(sm){
                     width: 80%;
                 }
+                @include responsive(xs){
+                    width: 70%;
+                }
             }
         }
         .links{
@@ -79,7 +82,7 @@ header{
         position: absolute;
         z-index: -1;
         width: 100%;
-        @include responsive(lg){
+        @media(max-width:1109px){
             width: unset;
             height: 100%;
         }
@@ -106,7 +109,7 @@ header{
                     font-size: 38px;
                 }
                 @include responsive(xs){
-                    font-size: 26px;
+                    font-size: 24px;
                 }
             }
             p{
@@ -143,13 +146,14 @@ header{
                 }
                 @include responsive(sm){
                     font-size: 14px;
-                    padding: 8px 24px 8px 26px;
+                    padding: 7px 22px 7px 23px;
                 }
             }
         }
     }
 }
 .building{
+    margin-bottom: 80px;
     .container{
         max-width: 1200px;
         margin: 0 auto;
@@ -186,11 +190,46 @@ header{
             }
         }
         .blurb{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .welcome-home,.entertain,.lobby,.doorway{
-                width: 48%;
+            .welcome-home{
+                display: flex;
+                gap: 40px;
+                .contents-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .content-welcome{
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin-bottom: 16px;
+                            line-height: 93%;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                        }
+                    }
+                    .entertain{
+                        max-width: 456px;
+                        align-self: center;
+                        max-height: 284px;
+                        .contents-wrap{
+                            h3{
+                                font-size: 30px;
+                                font-family: 'chronicle';
+                                color: #332E2F;
+                                margin: 32px 0px 16px 0px;
+                            }
+                            p{
+                                font-size: 18px;
+                                font-family: "Open Sans", sans-serif;
+                                color: #5A5D64;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -203,16 +242,19 @@ header{
         margin: 0 auto;
         padding: 0px 20px;
         margin-bottom: 84px;
+        @include responsive(xs){
+            margin-bottom: 60px;
+        }
         .image-wrapper{
             margin-bottom: 80px;
             @include responsive(md){
-                margin-bottom: 70px;
+                margin-bottom: 64px;
             }
             @include responsive(sm){
-                margin-bottom: 50px;
+                margin-bottom: 48px;
             }
             @include responsive(xs){
-                margin-bottom: 34px;
+                margin-bottom: 32px;
             }
             img{
                 width: 100%;
@@ -220,12 +262,12 @@ header{
         }
         .content-wrap{
             .heading{
-                margin-bottom: 58px;
+                margin-bottom: 54px;
                 @include responsive(sm){
-                    margin-bottom: 40px;
+                    margin-bottom: 38px;
                 }
                 @include responsive(xs){
-                    margin-bottom: 28px;
+                    margin-bottom: 22px;
                 }
                 h2{
                     font-size: 48px;
@@ -243,7 +285,7 @@ header{
                         font-size: 36px;
                     }
                     @include responsive(xs){
-                        font-size: 26px;
+                        font-size: 22px;
                     }
                     &::after{
                         content: "";
@@ -278,6 +320,9 @@ header{
 }
 .views-group{
     padding: 96px 0px;
+    @include responsive(xs){
+        padding: 70px 0px;
+    }
     background-color: #F7F7F7;
     .container{
         max-width: 1200px;
@@ -285,11 +330,27 @@ header{
         padding: 0px 20px;
         display: flex;
         justify-content: space-between;
+        @include responsive(sm){
+            flex-direction: column;
+            gap: 50px;
+        }
+        @include responsive(xs){
+            gap: 35px;
+        }
         gap: 24px;
         .view{
             width: 100%;
             img{
                 margin-bottom: 48px;
+                @include responsive(md){
+                    margin-bottom: 32px;
+                }
+                @include responsive(sm){
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 20px;
+                }
                 width: 100%;
             }
             h3{
@@ -298,12 +359,33 @@ header{
                 text-align: center;
                 color: #332E2F;
                 margin-bottom: 16px;
+                @include responsive(md){
+                    font-size: 22px;
+                    margin-bottom: 14px;
+                }
+                @include responsive(sm){
+                    font-size: 26px;
+                    margin-bottom: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 22px;
+                    margin-bottom: 14px;
+                }
             }
             p{
                 font-size: 15px;
                 font-family: "Open Sans", sans-serif;
                 text-align: center;
                 color: #5A5D64;
+                @include responsive(md){
+                    font-size: 12px;
+                }
+                @include responsive(sm){
+                    font-size: 14px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
             }   
         }
     }
