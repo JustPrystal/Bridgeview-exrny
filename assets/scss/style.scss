@@ -21,6 +21,9 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a{
+            cursor: pointer;
+        }
         .logo-wrap{
             .logo{
                 @include responsive(sm){
@@ -185,48 +188,184 @@ header{
             p{
                 font-size: 18px;
                 font-family: "Open Sans", sans-serif;
+                line-height: 32px;
                 text-align: center;
                 color: #5A5D64;
             }
         }
         .blurb{
-            .welcome-home{
-                display: flex;
-                gap: 40px;
-                .contents-wrap{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    .content-welcome{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            @include responsive(lg){
+                position: unset;
+            }
+            .blurb-childs{
+                width: 48%;
+                @include responsive(lg){
+                    .image-wrap{
+                        height: 70%;
+                        width: 100%;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .content-wrap{
+                        height: 30%;
+                        width: 100%;
+                    }
+                }
+            }
+            .welcome-home-wrap{
+                .welcome-home{
+                    @include responsive(lg){
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                    .welcome-content-wrap{
+                        max-width: 263px;
+                        position: absolute;
+                        top: 0;
+                        left: 44%;
+                        @include responsive(lg){
+                            max-width: unset;
+                            position: unset;
+                        }
                         h3{
                             font-size: 30px;
                             font-family: 'chronicle';
                             color: #332E2F;
                             margin-bottom: 16px;
                             line-height: 93%;
+                            @include responsive(lg){
+                                margin: 32px 0px 16px 0px;
+                                line-height: 100%;
+                            }
                         }
                         p{
                             font-size: 18px;
+                            line-height: 24px;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                        }
+
+                    }
+                }
+            }
+            .entertain-wrap{
+                display: flex;
+                align-items: flex-end;
+                @include responsive(lg){
+                    display: unset;
+                    align-items: unset;
+                }
+                .entertain{
+                    max-width: 456px;
+                    @include responsive(lg){
+                        max-width: unset;
+                    }
+                    @include responsive(lg){
+                        width: 100%;
+                        height: 100%;
+                    }
+                    transform: translate(-6%,35.4%);
+                    @include responsive(lg){
+                        transform: unset;
+                    }
+                    .entertain-content-wrap{
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin: 32px 0px 16px 0px;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 24px;
                             font-family: "Open Sans", sans-serif;
                             color: #5A5D64;
                         }
                     }
-                    .entertain{
-                        max-width: 456px;
-                        align-self: center;
-                        max-height: 284px;
-                        .contents-wrap{
-                            h3{
-                                font-size: 30px;
-                                font-family: 'chronicle';
-                                color: #332E2F;
-                                margin: 32px 0px 16px 0px;
-                            }
-                            p{
-                                font-size: 18px;
-                                font-family: "Open Sans", sans-serif;
-                                color: #5A5D64;
-                            }
+                }
+            }
+            .lobby-wrap{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                @include responsive(lg){
+                    display: unset;
+                    justify-content: unset;
+                    margin-top: 0px;
+                }
+                .lobby{
+                    max-width: 457px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    @include responsive(lg){
+                        max-width: unset;
+                    }
+                    @include responsive(lg){
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .lobby-content-wrap{
+                        max-width: 439px;
+                        margin-bottom: 30px;
+                        @include responsive(lg){
+                            max-width: unset;
+                            margin-bottom: 0px;
+                        }
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin: 32px 0px 16px 0px;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 24px;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                            margin-bottom: 28px;
+                        }
+                    }
+                }
+            }
+            .doorway-wrap{
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                @include responsive(lg){
+                    display: unset;
+                    justify-content: unset;
+                    align-items: unset;
+                }
+                .doorway{
+                    max-width: 456px;
+                    @include responsive(lg){
+                        max-width: unset;
+                    }
+                    @include responsive(lg){
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .doorway-content-wrap{
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin: 32px 0px 16px 0px;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 24px;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
                         }
                     }
                 }
@@ -243,7 +382,7 @@ header{
         padding: 0px 20px;
         margin-bottom: 84px;
         @include responsive(xs){
-            margin-bottom: 60px;
+            margin-bottom: 58px;
         }
         .image-wrapper{
             margin-bottom: 80px;
@@ -305,6 +444,7 @@ header{
                 text-align: center;
                 color: #5A5D64;
                 font-weight: 600;
+                line-height: 32px;
                 @include responsive(md){
                     font-size: 18px;
                 }
@@ -321,7 +461,7 @@ header{
 .views-group{
     padding: 96px 0px;
     @include responsive(xs){
-        padding: 70px 0px;
+        padding: 76px 0px;
     }
     background-color: #F7F7F7;
     .container{
@@ -330,6 +470,7 @@ header{
         padding: 0px 20px;
         display: flex;
         justify-content: space-between;
+        gap: 24px;
         @include responsive(sm){
             flex-direction: column;
             gap: 50px;
@@ -337,10 +478,10 @@ header{
         @include responsive(xs){
             gap: 35px;
         }
-        gap: 24px;
         .view{
             width: 100%;
             img{
+                width: 100%;
                 margin-bottom: 48px;
                 @include responsive(md){
                     margin-bottom: 32px;
@@ -351,7 +492,6 @@ header{
                 @include responsive(xs){
                     margin-bottom: 20px;
                 }
-                width: 100%;
             }
             h3{
                 font-size: 28px;
@@ -376,6 +516,7 @@ header{
                 font-size: 15px;
                 font-family: "Open Sans", sans-serif;
                 text-align: center;
+                line-height: 24px;
                 color: #5A5D64;
                 @include responsive(md){
                     font-size: 12px;
@@ -390,17 +531,32 @@ header{
         }
     }
 }
-.amenities{
+#amenities{
     padding: 156px 0px 104px 0px;
     background-color: #fbf4f0;
+    @include responsive(sm){
+        padding: 106px 0px 84px 0px;
+    }
+    @include responsive(xs){
+        padding: 88px 0px 64px 0px;
+    }
     .container{
         max-width: 1200px;
         margin: 0 auto;
         padding: 0px 20px;
         .content-wrap{
             margin-bottom: 56px;
+            @include responsive(xs){
+                margin-bottom: 50px;
+            }
             .heading{
                 margin-bottom: 34px;
+                @include responsive(sm){
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 22px;
+                }
                 h2{
                     font-size: 48px;
                     position: relative;
@@ -409,6 +565,15 @@ header{
                     font-family: 'chronicle';
                     text-align: center;
                     text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    @include responsive(sm){
+                        font-size: 36px;
+                    }
+                    @include responsive(xs){
+                        font-size: 22px;
+                    }
                     &::after{
                         content: "";
                         background: #170f49;
@@ -426,6 +591,16 @@ header{
                 font-family: "Open Sans", sans-serif;
                 text-align: center;
                 color: #5A5D64;
+                line-height: 32px;
+                @include responsive(md){
+                    font-size: 16px;
+                }
+                @include responsive(sm){
+                    font-size: 14px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
             }
         }
         .room-container{
@@ -433,43 +608,113 @@ header{
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(2,1fr);
             gap: 24px;
+            @include responsive(md){
+                grid-template-columns: unset;
+                grid-template-rows: unset;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: unset;
+            }
+            .first-row{
+                margin-bottom: 32px;
+                order: 0;
+                @include responsive(md){
+                    margin-bottom: 0px;
+                }
+            }
             .rooms{
                 width: 100%;
+                @include responsive(md){
+                    width: 31%;
+                    margin-bottom: 35px;
+                }
+                @include responsive(xs){
+                    width: 100%;
+                    margin-bottom: 45px;
+                }
                 img{
                     width: 100%;
                     margin-bottom: 32px;
+                    @include responsive(md){
+                        margin-bottom: 20px;
+                    }
+                    @include responsive(xs){
+                        margin-bottom: 15px;
+                    }
                 }
                 h3{
                     font-size: 18px;
                     font-family: 'avenir';
                     color: #001330;
+                    line-height: 24px;
                     margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 16px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;
+                    }
                 }
                 p{
                     font-size: 15px;
                     font-family: "Open Sans", sans-serif;
                     color: #5A5D64;
+                    line-height: 24px;
+                    @include responsive(md){
+                        font-size: 12px;
+                    }
                 }  
-            }
-            .first-row{
-                margin-bottom: 32px;
             }
             .business{
                 grid-area: 2/2/3/4;
+                @include responsive(md){
+                    grid-area: unset;
+                    width: 100%;
+                    order: 1;
+                }
+                @include responsive(xs){
+                    order: unset;
+                }
+            }
+            .last-row{
+                @include responsive(md){
+                    order: 2;
+                    margin-bottom: 0px;
+                }
+                @include responsive(xs){
+                    order: unset;
+                    margin-bottom: 45px;
+                }
             }
         }
     }
 }
-.neighborhood{
+#neighborhood{
     padding: 156px 0px;
+    @include responsive(sm){
+        padding: 106px 0px 96px 0px;
+    }
     .container{
         max-width: 1200px;
         margin: 0 auto;
         padding: 0px 20px;
         .content-wrap{
-            margin-bottom: 43px;
+            margin-bottom: 50px;
+            @include responsive(xs){
+                margin-bottom: 43px;
+            }
             .heading{
                 margin-bottom: 43px;
+                @include responsive(sm){
+                    margin-bottom: 35px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 25px;
+                }
                 h2{
                     font-size: 48px;
                     position: relative;
@@ -478,13 +723,22 @@ header{
                     font-family: 'chronicle';
                     text-align: center;
                     text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    @include responsive(sm){
+                        font-size: 36px;
+                    }
+                    @include responsive(xs){
+                        font-size: 22px;
+                    }
                     &::after{
                         content: "";
                         background: #170f49;
                         position: absolute;
                         height: 2px;
                         width: 5%;
-                        bottom: 0;
+                        bottom: -1px;
                         left: 50%;
                         transform: translate(-50%);
                     }
@@ -495,6 +749,16 @@ header{
                 font-family: "Open Sans", sans-serif;
                 text-align: center;
                 color: #5A5D64;
+                line-height: 32px;
+                @include responsive(md){
+                    font-size: 16px;
+                }
+                @include responsive(sm){
+                    font-size: 14px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
             }
         }
         .places{
@@ -502,26 +766,70 @@ header{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2,1fr);
             gap: 24px;
+            @include responsive(sm){
+                grid-template-columns: unset;
+                grid-template-rows: unset;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: unset;
+            }
+            .first-row{
+                margin-bottom: 19px;
+                @include responsive(sm){
+                    margin-bottom: 0px;
+                }
+            }
             .place{
                 width: 100%;
+                @include responsive(sm){
+                    width: 48%;
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    width: 100%;
+                }
                 img{
                     width: 100%;
                     margin-bottom: 32px;
+                    @include responsive(md){
+                        margin-bottom: 22px;
+                    }
                 }
                 h3{
                     font-size: 18px;
                     font-family: 'avenir';
                     color: #001330;
+                    line-height: 24px;
                     margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 16px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;
+                    }
                 }
                 p{
                     font-size: 15px;
                     font-family: "Open Sans", sans-serif;
                     color: #5A5D64;
+                    line-height: 24px;
+                    @include responsive(md){
+                        font-size: 12px;
+                    }
                 }  
             }
-            .first-row{
-                margin-bottom: 19px;
+            .last-row{
+                margin-bottom: 0px;
+                @include responsive(xs){
+                    margin-bottom: 30px;
+                }
+            }
+            .last{
+                margin-bottom: 0px;
             }
         }
     }
@@ -534,9 +842,15 @@ header{
         margin: 0 auto;
         padding: 0px 20px;
         .content-wrap{
-            margin-bottom: 40px;
+            margin-bottom: 48px;
             .heading{
                 margin-bottom: 40px;
+                @include responsive(sm){
+                    margin-bottom: 34px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 24px;
+                }
                 h2{
                     font-size: 48px;
                     position: relative;
@@ -545,6 +859,15 @@ header{
                     font-family: 'chronicle';
                     text-align: center;
                     text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    @include responsive(sm){
+                        font-size: 36px;
+                    }
+                    @include responsive(xs){
+                        font-size: 22px;
+                    }
                     &::after{
                         content: "";
                         background: #170f49;
@@ -562,31 +885,78 @@ header{
                 font-family: "Open Sans", sans-serif;
                 text-align: center;
                 color: #5A5D64;
+                line-height: 32px;
                 font-weight: 600;
+                @include responsive(md){
+                    font-size: 18px;
+                }
+                @include responsive(sm){
+                    font-size: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
             }
         }
         .layouts{
             display: flex;
             justify-content: space-between;
             gap: 24px;
+            @include responsive(sm){
+                flex-direction: column;
+                gap: 50px;
+            }
+            @include responsive(xs){
+                gap: 35px;
+            }
             .room{
                 width: 100%;
                 img{
                     margin-bottom: 32px;
                     width: 100%;
+                    @include responsive(md){
+                        margin-bottom: 30px;
+                    }
+                    @include responsive(sm){
+                        margin-bottom: 28px;
+                    }
+                    @include responsive(xs){
+                        margin-bottom: 20px;
+                    }
                 }
                 h3{
                     font-size: 28px;
                     font-family: 'chronicle';
                     text-align: center;
                     color: #332E2F;
+                    line-height: 24px;
                     margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 22px;
+                    }
+                    @include responsive(sm){
+                        font-size: 26px;
+                    }
+                    @include responsive(xs){
+                        font-size: 22px;
+                        margin-bottom: 6px;
+                    }
                 }
                 p{
                     font-size: 15px;
                     font-family: "Open Sans", sans-serif;
                     text-align: center;
+                    line-height: 24px;
                     color: #5A5D64;
+                    @include responsive(md){
+                        font-size: 12px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                    @include responsive(xs){
+                        font-size: 12px;
+                    }
                 }
                 .price-tag{
                     font-size: 16px;
@@ -594,6 +964,12 @@ header{
                     text-align: center;
                     color: #001330;
                     margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 14px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -614,9 +990,26 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a{
+            cursor: pointer;
+        }
+        .logo-wrap{
+            .logo{
+                @include responsive(md){
+                    width: 80%;
+                }
+                @include responsive(sm){
+                    width: 60%;
+                }
+            }
+        }
         .links{
             display: flex;
             align-items: center;
+            @include responsive(xs){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
             .link{
                 text-decoration: none;
                 color: #fff;
@@ -624,6 +1017,17 @@ footer{
                 margin-left: 32px;
                 font-weight: 500;
                 font-family: "Open Sans", sans-serif;
+                @include responsive(lg){
+                    margin-left: 28px;
+                }
+                @include responsive(md){
+                    font-size: 12px;
+                    margin-left: 20px;
+                }
+                @include responsive(sm){
+                    font-size: 8px;
+                    margin-left: 10px;
+                }
             }
             .link-home{
                 margin-left: 0px;
@@ -631,6 +1035,18 @@ footer{
             .link-contact{
                 padding: 3px 10px;
                 font-size: 13px;
+                @include responsive(md){
+                    padding: 2px 8px;
+                    font-size: 12px;
+                }
+                @include responsive(sm){
+                    font-size: 8px;
+                    padding: 2px 6px;
+                }
+                @include responsive(sm){
+                    font-size: 8px;
+                    padding: 1px 2px;
+                }
                 border-radius: 2px;
                 text-transform: uppercase;
                 background-color: #97301F;
@@ -638,15 +1054,49 @@ footer{
         }
         .icons{
             display: flex;
+            gap: 40px;
+            justify-content: flex-end;
             align-items: center;
+            @include responsive(lg){
+                gap: 0px;
+            }
+            a{
+                text-align: end;
+                &:nth-child(1){
+                    @include responsive(md){
+                        margin-left: 5px;
+                    }
+                }
+                &:nth-child(2){
+                    @include responsive(md){
+                        text-align: center;
+                    }
+                }
+            }
             .footer_logo{
                 mix-blend-mode: screen;
             }
-            .footer_logo_2{
-                margin: 0px 0px 0px 43px;
-            }
             .footer_logo_1{
-                margin: 0;
+                @include responsive(lg){
+                    width: 80%;
+                }
+                @include responsive(md){
+                    width: 60%;
+                }
+                @include responsive(sm){
+                    width: 50%;
+                }
+            }
+            .footer_logo_2{
+                @include responsive(lg){
+                    width: 75%;
+                }
+                @include responsive(md){
+                    width: 60%;
+                }
+                @include responsive(sm){
+                    width: 50%;
+                }
             }
         }
     }

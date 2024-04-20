@@ -10,13 +10,13 @@
 <header>
     <div class="header-wrap">
         <div class="logo-wrap">
-            <img class="logo" src="./assets/images/logo.png" alt="">
+            <a href="#"><img class="logo" src="./assets/images/logo.png" alt=""></a>
         </div>
         <div class="links">
             <a href="#" class="link link-residences">Residences</a>
-            <a href="#" class="link link-amenitites">Amenitites</a>
+            <a href="#amenities" class="link link-amenitites">Amenitites</a>
             <a href="#" class="link link-availabilities">Availabilities</a>
-            <a href="#" class="link link-neighborhood">Neighborhood</a>
+            <a href="#neighborhood" class="link link-neighborhood">Neighborhood</a>
             <a href="#" class="link link-contact">Contact</a>
         </div>
     </div>
@@ -31,7 +31,7 @@
         </div>
     </div>
 </section>
-<!-- <section class="building">
+<section class="building">
     <div class="container">
         <div class="content">
             <div class="heading">
@@ -40,49 +40,55 @@
             <p>Bridge View encourages you to experience life from a new perspective. Modern apartments and cutting-edge amenities meet soaring city views at this stylish high-rise, located at one of Brooklyn’s most sought-after addresses. </p>
         </div>
         <div class="blurb">
-            <div class="welcome-home">
-                <div class="image-wrap">
-                    <img src="./assets/images/living_room.png" alt="">
-                </div>
-                <div class="contents-wrap">
-                    <div class="content-welcome">
+            <div class="welcome-home-wrap blurb-childs">
+                <div class="welcome-home">
+                    <div class="welcome-image-wrap image-wrap">
+                        <img src="./assets/images/living_room.png" alt="">
+                    </div>
+                    <div class="welcome-content-wrap content-wrap">
                         <h3>Welcome Home</h3>
                         <p>A sophisticated lobby – 
                             complete with a doorman -
                             an unforgettable first impression. </p>
                     </div>
-                    <div class="entertain">
-                        <div class="image-wrap">
-                            <img src="./assets/images/kitchen_hardwood.png" alt="">
-                        </div>
-                        <div class="contents-wrap">
-                            <h3>Entertain In Style.</h3>
-                            <p>Contemporary kitchens come complete with hardwood flooring and sleek stainless steel appliances.  </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="lobby">
-                <div class="image-wrap">
-                    <img src="./assets/images/looby.png" alt="">
-                </div>
-                <div class="contents-wrap">
-                    <h3>Relax Into Luxury</h3>
-                    <p>Every unit includes spacious living areas that feature a comforting, modern aesthetic. </p>
                 </div>
             </div>
-            <div class="doorway">
-                <div class="image-wrap">
-                    <img src="./assets/images/doorway.png" alt="">
+            <div class="entertain-wrap blurb-childs">
+                <div class="entertain">
+                    <div class="entertain-image-wrap image-wrap">
+                        <img src="./assets/images/kitchen_hardwood.png" alt="">
+                    </div>
+                    <div class="entertain-content-wrap content-wrap">
+                        <h3>Entertain In Style.</h3>
+                        <p>Contemporary kitchens come complete with hardwood flooring and sleek stainless steel appliances.  </p>
+                    </div>
                 </div>
-                <div class="contents-wrap">
-                    <h3>Relax Into Luxury</h3>
-                    <p>Every unit includes spacious living areas that feature a comforting, modern aesthetic. </p>
+            </div>
+            <div class="lobby-wrap blurb-childs">
+                <div class="lobby">                    
+                    <div class="lobby-image-wrap image-wrap">
+                        <img src="./assets/images/looby.png" alt="">
+                    </div>
+                    <div class="lobby-content-wrap content-wrap">
+                        <h3>Relax Into Luxury</h3>
+                        <p>Every unit includes spacious living areas that feature a comforting, modern aesthetic. </p>
+                    </div>
                 </div>
-            </div> -->
-        <!-- </div>
+            </div> 
+            <div class="doorway-wrap blurb-childs">
+                <div class="doorway">
+                    <div class="doorway-image-wrap image-wrap">
+                        <img src="./assets/images/doorway.png" alt="">
+                    </div>
+                    <div class="doorway-content-wrap content-wrap">
+                        <h3>Relax Into Luxury</h3>
+                        <p>Every unit includes spacious living areas that feature a comforting, modern aesthetic. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section> -->
+</section>
 <section class="views">
     <div class="container">
         <div class="image-wrapper">
@@ -115,7 +121,7 @@
         </div>
     </div>
 </section>
-<section class="amenities">
+<section id="amenities">
     <div class="container">
         <div class="content-wrap">
             <div class="heading">
@@ -139,12 +145,12 @@
                 <h3>Laundry Room</h3>
                 <p>A Laundry Room located just steps from your front door adds an extra level of convenience. </p>
             </div>
-            <div class="game first-row rooms">
+            <div class="game first-row last-row rooms">
                 <img src="./assets/images/game_room.png" alt="">
                 <h3>Party / Game Room</h3>
                 <p>Host unforgettable gatherings with friends and family in Bridge View’s dedicated Party Room. </p>
             </div>
-            <div class="pet rooms">
+            <div class="pet last-row rooms">
                 <img src="./assets/images/pet_spa.png" alt="">
                 <h3>Pet Spa</h3>
                 <p>Pamper your favorite four legged friend in the luxurious Pet Spa. </p>
@@ -154,7 +160,7 @@
                 <h3>Business Center</h3>
                 <p>Working from home is even more efficient thanks to Bridge View’s state-of-the-art Business Center. Open 24-hours, this designated workspace offers even more flexibility and convenience for anyone with a Hybrid or modern work schedule. It comes complete with high-speed internet, worktables, and separate spaces for taking meetings or calls.</p>
             </div>
-            <div class="gym rooms">
+            <div class="gym last-row rooms">
                 <img src="./assets/images/gym.png" alt="">
                 <h3>Gym</h3>
                 <p>An on-site Fitness Facility allows you to achieve your goals no matter your work schedule. </p>
@@ -162,7 +168,7 @@
         </div>
     </div>
 </section>
-<section class="neighborhood">
+<section id="neighborhood">
     <div class="container">
         <div class="content-wrap">
             <div class="heading">
@@ -191,12 +197,12 @@
                 <h3>Time Out Market Brooklyn</h3>
                 <p>Expand your horizons at Time Out Market, a popular food hall located within walking distance of Bridge View.   </p>
             </div>
-            <div class="walkway place">
+            <div class="walkway last-row place">
                 <img src="./assets/images/brooklyn_bridge_walkway.png" alt="">
                 <h3>Brooklyn Bridge Walkway</h3>
                 <p>Located just a few blocks away, traverse the Brooklyn Bridge Walkway for an unmatched New York experience.  </p>
             </div>
-            <div class="gallery place">
+            <div class="gallery last-row last place">
                 <img src="./assets/images/a.i.r_gallery.png" alt="">
                 <h3>A.I.R Gallery</h3>
                 <p>The neighborhood’s vibrant art scene comes to life at the nearby A.I.R. Gallery, a non-profit that showcases work by women artists.  </p>
@@ -234,24 +240,24 @@
         </div>
     </div>
 </section>
-<section class="map">
+<!-- <section class="map">
     <iframe src="https://www.google.com/maps/d/embed?mid=1k7iQyeWDUnWbCpRKzYRjAgNBjNLYdXI&ehbc=2E312F" width="640" height="480"></iframe>
-</section>
+</section> -->
 <footer>
     <div class="footer-wrap">
         <div class="logo-wrap">
-            <img src="./assets/images/logo.png" alt="" class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="" class="logo"></a>
         </div>
         <div class="links">
             <a href="#" class="link link-home">Home</a>
             <a href="#" class="link link-residences">Residences</a>
-            <a href="#" class="link link-amenitites">Amenitites</a>
-            <a href="#" class="link link-neighborhood">Neighborhood</a>
+            <a href="#amenities" class="link link-amenitites">Amenitites</a>
+            <a href="#neighborhood" class="link link-neighborhood">Neighborhood</a>
             <a href="#" class="link link-contact">Contact</a>
         </div>
         <div class="icons">
-            <img class="footer_logo_1 footer_logo" src="./assets/images/footer_logo_1.png" alt="">
-            <img class="footer_logo_2 footer_logo" src="./assets/images/footer_logo_2.png" alt="">
+            <a href="#"><img class="footer_logo_1 footer_logo" src="./assets/images/footer_logo_1.png" alt=""></a>
+            <a href="#"><img class="footer_logo_2 footer_logo" src="./assets/images/footer_logo_2.png" alt=""></a>
         </div>
     </div>
 </footer>
