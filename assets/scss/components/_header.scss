@@ -1,0 +1,98 @@
+header{
+    background-color: #97301F;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    .header-wrap{
+        max-width: 1200px;
+        padding: 15px 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            cursor: pointer;
+        }
+        .logo-wrap{
+            .logo{
+                @include responsive(sm){
+                    width: 80%;
+
+                }
+                @include responsive(xs){
+                    width: 70%;
+                }
+            }
+        }
+        .links-wrap{
+            @include responsive(sm){
+                display: none;
+                position: absolute;
+                left: 0;
+                background-color: white;
+                padding: 20px;
+                top: 70px;
+                width: 100%;
+                box-shadow: 0 10px 10px -5px rgba($color: #000000, $alpha: 0.15);
+            }
+            @include responsive(xs){
+                top: 65px;
+            }
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            @include responsive(sm){
+                flex-direction: column;
+            }
+            .link{
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                margin-left: 50px;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-family: "Open Sans", sans-serif;
+                @include responsive(lg){
+                    margin-left: 40px;
+                    font-size: 14px;
+                }
+                @include responsive(md){
+                    margin-left: 20px;
+                    font-size: 12px;
+                }
+                @include responsive(sm){
+                    margin: 10px;
+                    color: black;
+                }
+            }
+            .link-residences{
+                margin-left: 0px;
+                @include responsive(sm){
+                    margin: 10px;
+                }
+            }
+            .link-contact{
+                color: #97301F;
+                padding: 8px 32px;
+                border-radius: 4px;
+                font-family: 'avenir';
+                background-color: #fff;
+                @include responsive(sm){
+                    color:unset;
+                    background-color: unset;
+                    padding:unset;
+                    border-radius:unset;
+                    
+                }
+            }
+        }
+    }
+    svg{
+        display: none;
+        width: 30px;
+        @include responsive(sm){
+            display: block;
+        }
+    }
+}

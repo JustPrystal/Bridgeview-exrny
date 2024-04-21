@@ -1,0 +1,138 @@
+#neighborhood{
+    padding: 156px 0px;
+    @include responsive(sm){
+        padding: 106px 0px 96px 0px;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        .content-wrap{
+            margin-bottom: 50px;
+            @include responsive(xs){
+                margin-bottom: 43px;
+            }
+            .heading{
+                margin-bottom: 43px;
+                @include responsive(sm){
+                    margin-bottom: 35px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 25px;
+                }
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    color: #001330;
+                    line-height: 120%;
+                    font-family: 'chronicle';
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    @include responsive(sm){
+                        font-size: 32px;
+                    }
+                    &::after{
+                        content: "";
+                        background: #170f49;
+                        position: absolute;
+                        height: 2px;
+                        width: 5%;
+                        bottom: -1px;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                }
+            }
+            p{
+                font-size: 18px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                color: #5A5D64;
+                line-height: 32px;
+                @include responsive(md){
+                    font-size: 16px;
+                }
+                @include responsive(sm){
+                    font-size: 14px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            }
+        }
+        .places{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 24px;
+            @include responsive(sm){
+                grid-template-columns: unset;
+                grid-template-rows: unset;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: unset;
+            }
+            .first-row{
+                margin-bottom: 19px;
+                @include responsive(sm){
+                    margin-bottom: 0px;
+                }
+            }
+            .place{
+                width: 100%;
+                @include responsive(sm){
+                    width: 48%;
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                    margin-bottom: 32px;
+                    @include responsive(md){
+                        margin-bottom: 22px;
+                    }
+                }
+                h3{
+                    font-size: 18px;
+                    font-family: 'avenir';
+                    color: #001330;
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 16px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    font-family: "Open Sans", sans-serif;
+                    color: #5A5D64;
+                    line-height: 24px;
+                    @include responsive(md){
+                        font-size: 12px;
+                    }
+                }  
+            }
+            .last-row{
+                margin-bottom: 0px;
+                @include responsive(xs){
+                    margin-bottom: 30px;
+                }
+            }
+            .last{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

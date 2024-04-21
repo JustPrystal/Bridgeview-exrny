@@ -1,0 +1,256 @@
+.building{
+    margin-bottom: 80px;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        .content{
+            margin-bottom: 42px;
+            .heading{
+                margin-bottom: 34px;
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    color: #001330;
+                    line-height: 120%;
+                    font-family: 'chronicle';
+                    text-align: center;
+                    text-transform: uppercase;
+                    &::after{
+                        content: "";
+                        background: #170f49;
+                        position: absolute;
+                        height: 2px;
+                        width: 5%;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                }
+            }
+            p{
+                font-size: 16px;
+                font-family: "Open Sans", sans-serif;
+                line-height: 2;
+                text-align: center;
+                color: #5A5D64;
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            }
+        }
+        .blurb{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            @include responsive(lg){
+                position: unset;
+            }
+            .blurb-childs{
+                width: 48%;
+                @include responsive(lg){
+                    .image-wrap{
+                        height: 70%;
+                        width: 100%;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .content-wrap{
+                        height: 30%;
+                        width: 100%;
+                    }
+                }
+                @include responsive(xs){
+                    width: 100%;
+                }
+            }
+            .welcome-home-wrap{
+                .welcome-home{
+                    @include responsive(lg){
+                        width: 100%;
+                        // height: 100%;
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                    @include responsive(xs){
+                        flex-direction: column;
+                    }
+                    .welcome-content-wrap{
+                        max-width: 263px;
+                        position: absolute;
+                        top: 0;
+                        left: 44%;
+                        margin-bottom: 20px;
+                        @include responsive(lg){
+                            max-width: unset;
+                            position: unset;
+                        }
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin-bottom: 16px;
+                            line-height: 93%;
+                            @include responsive(lg){
+                                margin: 32px 0px 16px 0px;
+                                line-height: 100%;
+                            }@include responsive(xs){
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 1.5;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                            @include responsive(xs){
+                                font-size: 12px;
+                            }
+                        }
+
+                    }
+                }
+            }
+            .entertain-wrap{
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 20px;
+                @include responsive(lg){
+                    display: unset;
+                    align-items: unset;
+                }
+                .entertain{
+                    max-width: 456px;
+                    @include responsive(lg){
+                        max-width: unset;
+                    }
+                    @include responsive(lg){
+                        width: 100%;
+                        // height: 100%;
+                    }
+                    transform: translate(-6%,35.4%);
+                    @include responsive(lg){
+                        transform: unset;
+                    }
+                    .entertain-content-wrap{
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin: 32px 0px 16px 0px;
+                            @include responsive(xs){
+                                margin: 10px 0;
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 1.5;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                            @include responsive(xs){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .lobby-wrap{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                @include responsive(lg){
+                    display: unset;
+                    justify-content: unset;
+                    margin-top: 0px;
+                }
+                .lobby{
+                    max-width: 457px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    @include responsive(lg){
+                        max-width: unset;
+                    }
+                    @include responsive(lg){
+                        width: 100%;
+                    }
+                    @include responsive(xs){
+                        flex-direction: column;
+                    }
+                    .lobby-content-wrap{
+                        max-width: 439px;
+                        margin-bottom: 30px;
+                        @include responsive(lg){
+                            max-width: unset;
+                            margin-bottom: 0px;
+                        }
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin: 32px 0px 16px 0px;
+                            @include responsive(xs){
+                                margin: 10px 0;
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 1.5;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                            margin-bottom: 28px;
+                            @include responsive(xs){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .doorway-wrap{
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                @include responsive(lg){
+                    display: unset;
+                    justify-content: unset;
+                    align-items: unset;
+                }
+                .doorway{
+                    max-width: 456px;
+                    @include responsive(lg){
+                        max-width: unset;
+                    }
+                    @include responsive(lg){
+                        width: 100%;
+                        // height: 100%;
+                    }
+                    .doorway-content-wrap{
+                        h3{
+                            font-size: 30px;
+                            font-family: 'chronicle';
+                            color: #332E2F;
+                            margin: 32px 0px 16px 0px;
+                            @include responsive(xs){
+                                margin: 10px 0;
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 24px;
+                            font-family: "Open Sans", sans-serif;
+                            color: #5A5D64;
+                            @include responsive(xs){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

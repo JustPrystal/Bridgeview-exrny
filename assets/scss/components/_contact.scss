@@ -1,0 +1,155 @@
+.contact{
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 72px 20px;
+        .heading{
+            font-size: 48px;
+            position: relative;
+            color: #001330;
+            line-height: 120%;
+            font-family: 'chronicle';
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            &::after{
+                content: "";
+                background: #170f49;
+                position: absolute;
+                height: 2px;
+                width: 5%;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        .sub-heading{
+            font-weight: 700;
+            font-size: 18px;
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+            color: #5A5D64;
+            line-height: 1.8;
+        }
+        .description{
+            font-size: 18px;
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+            color: #5A5D64;
+            margin-bottom: 66px;
+            line-height: 1.8;
+            @include responsive(xs){
+                font-size: 12px;
+            }
+        }
+        .form{
+            .field-group{
+                display: flex;
+                gap: 24px;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                @include responsive(sm){
+                    flex-wrap: wrap;
+                }
+                div{
+                    width: 100%;
+                    font-family: 'avenir';
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    svg{
+                        position: absolute;
+                        right: 11px;
+                        bottom: 11px;
+                        pointer-events: none;
+                    }
+                    label{
+                        font-size: 14px;
+                        line-height: 1.25;
+                        margin-bottom: 5px;
+                        color: #252A31;
+                    }
+                    input, textarea, select{
+                        resize: none;
+                        font-family: 'avenir';
+                        padding: 12px;
+                        padding-right: 38px;
+                        border-radius: 4px;
+                        border: 1px solid #BAC7D5;
+                        background-color: #f3f5f7;
+                    }
+                    textarea{
+                        height: 128px;
+                    }
+                    input, select{
+                        max-height: 48px;
+                        height: 48px;
+                    }
+                    select { 
+                        /* for Firefox */ 
+                        -moz-appearance: none; 
+                        /* for Safari, Chrome, Opera */ 
+                        -webkit-appearance: none; 
+                    } 
+                
+                    /* for IE10 */ 
+                    select::-ms-expand { 
+                        display: none; 
+                    
+                    }
+                    input[type="date"], select{
+                        padding-right: 12px;
+                    } 
+                    input[type="date"]::-webkit-inner-spin-button,
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        opacity: 0;
+                        -webkit-appearance: none;
+                    }
+                }
+            }
+            .button-wrap{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 44px;
+                .button{
+                    margin-top: 42px;
+                    padding: 13px 56px;
+                    border-radius: 4px;
+                    background-color: #001330;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family: "Open Sans", sans-serif;
+                }
+            }
+        }
+        .link-to-apply{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            p{
+                color: #5A5D64;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: "Open Sans";
+                margin-bottom: 20px;
+            }
+            a{
+                color: #97301F;
+                text-transform: uppercase;
+                font-family: "open sans";
+                font-weight: 700;
+            }
+        }
+    }
+}
+.thank-you-notice{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding:14px 20px;
+    border-radius:5px;
+    margin-bottom:20px;
+    font-family: "Open Sans", sans-serif;
+
+}

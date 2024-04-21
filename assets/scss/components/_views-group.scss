@@ -1,0 +1,74 @@
+
+.views-group{
+    padding: 96px 0px;
+    @include responsive(xs){
+        padding: 76px 0px;
+    }
+    background-color: #F7F7F7;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        @include responsive(sm){
+            flex-direction: column;
+            gap: 50px;
+        }
+        @include responsive(xs){
+            gap: 35px;
+        }
+        .view{
+            width: 100%;
+            img{
+                width: 100%;
+                margin-bottom: 48px;
+                @include responsive(md){
+                    margin-bottom: 32px;
+                }
+                @include responsive(sm){
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 20px;
+                }
+            }
+            h3{
+                font-size: 28px;
+                font-family: 'chronicle';
+                text-align: center;
+                color: #332E2F;
+                margin-bottom: 16px;
+                @include responsive(md){
+                    font-size: 22px;
+                    margin-bottom: 14px;
+                }
+                @include responsive(sm){
+                    font-size: 26px;
+                    margin-bottom: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 22px;
+                    margin-bottom: 14px;
+                }
+            }
+            p{
+                font-size: 15px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                line-height: 24px;
+                color: #5A5D64;
+                @include responsive(md){
+                    font-size: 12px;
+                }
+                @include responsive(sm){
+                    font-size: 14px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            }   
+        }
+    }
+}

@@ -1,0 +1,164 @@
+footer{
+    width: 100%;
+    background-color: #332E2F;
+    .footer-wrap{
+        max-width: 1200px;
+        padding: 15px 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(sm){
+            flex-wrap:wrap;
+            gap: 20px;
+        }
+        a{
+            cursor: pointer;
+        }
+        .logo-wrap{
+            .logo{
+                @include responsive(md){
+                    width: 80%;
+                }
+                @include responsive(sm){
+                    width:100%;
+                }
+            }
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            @include responsive(sm){
+                flex: 0 0 100%;
+                flex-direction:column;
+                gap: 10px;
+                order:2;
+                align-items:flex-start;
+            }
+            @include responsive(xs){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .link{
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                margin-left: 32px;
+                font-weight: 500;
+                font-family: "Open Sans", sans-serif;
+                @include responsive(lg){
+                    margin-left: 28px;
+                }
+                @include responsive(md){
+                    font-size:14px;
+                    margin-left:15px;
+                }
+                @include responsive(sm){
+                    margin: 0;
+                    margin: 5px 0;
+                }
+            }
+            .link-home{
+                margin-left: 0px;
+            }
+            .link-contact{
+                padding: 3px 10px;
+                font-size: 13px;
+                @include responsive(md){
+                    padding: 2px 8px;
+                    font-size: 12px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+                border-radius: 2px;
+                text-transform: uppercase;
+                background-color: #97301F;
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 40px;
+            justify-content: flex-end;
+            align-items: center;
+            @include responsive(lg){
+                gap: 0px;
+            }
+            @include responsive(sm){
+                order:1;
+            }
+            a{
+                text-align: end;
+                &:nth-child(1){
+                    @include responsive(md){
+                        margin-left: 5px;
+                    }
+                }
+                &:nth-child(2){
+                    @include responsive(md){
+                        text-align: center;
+                    }
+                }
+            }
+            .footer_logo{
+                mix-blend-mode: screen;
+            }
+            .footer_logo_1{
+                @include responsive(lg){
+                    width: 80%;
+                }
+                // @include responsive(md){
+                //     width: 60%;
+                // }
+                // @include responsive(sm){
+                //     width: 50%;
+                // }
+            }
+            .footer_logo_2{
+                @include responsive(lg){
+                    width: 75%;
+                }
+                // @include responsive(md){
+                //     width: 60%;
+                // }
+                // @include responsive(sm){
+                //     width: 50%;
+                // }
+            }
+        }
+    }
+    .footer-bottom-wrap{
+        display:flex;
+        align-items: center;
+        border-top:1px #fff solid;
+        padding: 10px 20px;
+        max-width:1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        @include responsive(sm){
+            flex-wrap:wrap;
+            gap: 10px;
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include responsive(md){
+                gap: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 500;
+                font-family: "Open Sans", sans-serif;
+                cursor:pointer;
+            }
+        }
+        .copy-right{
+            color:#fff;
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+}

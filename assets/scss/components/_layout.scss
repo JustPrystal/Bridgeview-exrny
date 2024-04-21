@@ -1,0 +1,135 @@
+.layout{
+    background-color: #fbf4f0;
+    padding: 108px 0px 104px 0px;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        .content-wrap{
+            margin-bottom: 48px;
+            .heading{
+                margin-bottom: 40px;
+                @include responsive(sm){
+                    margin-bottom: 34px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 24px;
+                }
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    color: #001330;
+                    line-height: 120%;
+                    font-family: 'chronicle';
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    &::after{
+                        content: "";
+                        background: #170f49;
+                        position: absolute;
+                        height: 2px;
+                        width: 5%;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                }
+            }
+            p{
+                font-size: 20px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                color: #5A5D64;
+                line-height: 32px;
+                font-weight: 600;
+                @include responsive(md){
+                    font-size: 18px;
+                }
+                @include responsive(sm){
+                    font-size: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            }
+        }
+        .layouts{
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            @include responsive(sm){
+                flex-direction: column;
+                gap: 50px;
+            }
+            @include responsive(xs){
+                gap: 35px;
+            }
+            .room{
+                width: 100%;
+                img{
+                    margin-bottom: 32px;
+                    width: 100%;
+                    @include responsive(md){
+                        margin-bottom: 30px;
+                    }
+                    @include responsive(sm){
+                        margin-bottom: 28px;
+                    }
+                    @include responsive(xs){
+                        margin-bottom: 20px;
+                    }
+                }
+                h3{
+                    font-size: 18px;
+                    font-family: 'avenir';
+                    text-align: center;
+                    color: #001330;
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 22px;
+                    }
+                    @include responsive(sm){
+                        font-size: 26px;
+                    }
+                    @include responsive(xs){
+                        font-size: 22px;
+                        margin-bottom: 6px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    font-family: "Open Sans", sans-serif;
+                    text-align: center;
+                    line-height: 24px;
+                    color: #5A5D64;
+                    @include responsive(md){
+                        font-size: 12px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                    @include responsive(xs){
+                        font-size: 12px;
+                    }
+                }
+                .price-tag{
+                    font-size: 16px;
+                    font-family: 'avenir';
+                    text-align: center;
+                    color: #001330;
+                    margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 14px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

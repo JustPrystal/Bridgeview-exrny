@@ -1,0 +1,156 @@
+#amenities{
+    padding: 156px 0px 104px 0px;
+    background-color: #fbf4f0;
+    @include responsive(sm){
+        padding: 106px 0px 84px 0px;
+    }
+    @include responsive(xs){
+        padding: 88px 0px 64px 0px;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        .content-wrap{
+            margin-bottom: 56px;
+            @include responsive(xs){
+                margin-bottom: 50px;
+            }
+            .heading{
+                margin-bottom: 34px;
+                @include responsive(sm){
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 22px;
+                }
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    color: #001330;
+                    line-height: 120%;
+                    font-family: 'chronicle';
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    &::after{
+                        content: "";
+                        background: #170f49;
+                        position: absolute;
+                        height: 2px;
+                        width: 5%;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                }
+            }
+            p{
+                font-size: 18px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                color: #5A5D64;
+                line-height: 32px;
+                @include responsive(md){
+                    font-size: 16px;
+                }
+                @include responsive(sm){
+                    font-size: 14px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            }
+        }
+        .room-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 24px;
+            @include responsive(md){
+                grid-template-columns: unset;
+                grid-template-rows: unset;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: unset;
+            }
+            .first-row{
+                margin-bottom: 32px;
+                order: 0;
+                @include responsive(md){
+                    margin-bottom: 0px;
+                }
+            }
+            .rooms{
+                width: 100%;
+                @include responsive(md){
+                    width: 31%;
+                    margin-bottom: 35px;
+                }
+                @include responsive(xs){
+                    width: 100%;
+                    margin-bottom: 45px;
+                }
+                img{
+                    width: 100%;
+                    margin-bottom: 32px;
+                    @include responsive(md){
+                        margin-bottom: 20px;
+                    }
+                    @include responsive(xs){
+                        margin-bottom: 15px;
+                    }
+                }
+                h3{
+                    font-size: 18px;
+                    font-family: 'avenir';
+                    color: #001330;
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                    @include responsive(md){
+                        font-size: 16px;
+                    }
+                    @include responsive(sm){
+                        font-size: 14px;
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    font-family: "Open Sans", sans-serif;
+                    color: #5A5D64;
+                    line-height: 24px;
+                    @include responsive(md){
+                        font-size: 12px;
+                    }
+                }  
+            }
+            .business{
+                grid-area: 2/2/3/4;
+                @include responsive(md){
+                    grid-area: unset;
+                    width: 100%;
+                    order: 1;
+                }
+                @include responsive(xs){
+                    order: unset;
+                }
+            }
+            .last-row{
+                @include responsive(md){
+                    order: 2;
+                    margin-bottom: 0px;
+                }
+                @include responsive(xs){
+                    order: unset;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+}

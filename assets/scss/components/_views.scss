@@ -1,0 +1,81 @@
+.views{
+    margin-top: 144px;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        margin-bottom: 84px;
+        @include responsive(xs){
+            margin-bottom: 58px;
+        }
+        .image-wrapper{
+            margin-bottom: 80px;
+            @include responsive(md){
+                margin-bottom: 64px;
+            }
+            @include responsive(sm){
+                margin-bottom: 48px;
+            }
+            @include responsive(xs){
+                margin-bottom: 32px;
+            }
+            img{
+                width: 100%;
+                @include responsive(xs){
+                    display: none;
+                }
+            }
+        }
+        .content-wrap{
+            .heading{
+                margin-bottom: 54px;
+                @include responsive(sm){
+                    margin-bottom: 38px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 22px;
+                }
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    color: #001330;
+                    line-height: 120%;
+                    font-family: 'chronicle';
+                    padding-bottom: 2px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include responsive(md){
+                        font-size: 42px;
+                    }
+                    &::after{
+                        content: "";
+                        background: #170f49;
+                        position: absolute;
+                        height: 2px;
+                        width: 5%;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                }
+            }
+            p{
+                font-size: 20px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                color: #5A5D64;
+                font-weight: 600;
+                line-height: 32px;
+                @include responsive(md){
+                    font-size: 18px;
+                }
+                @include responsive(sm){
+                    font-size: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
