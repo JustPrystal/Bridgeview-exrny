@@ -21,9 +21,6 @@
             }
             img{
                 width: 100%;
-                @include responsive(xs){
-                    display: none;
-                }
             }
         }
         .content-wrap{

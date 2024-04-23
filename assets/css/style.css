@@ -136,6 +136,7 @@ header svg {
   margin-bottom: 74px;
   height: 75vh;
   overflow: hidden;
+  padding-top: 80px;
 }
 @media (max-width: 767px) {
   .hero {
@@ -146,6 +147,13 @@ header svg {
   .hero {
     height: 40vh;
   }
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
 }
 .hero video {
   position: absolute;
@@ -298,6 +306,9 @@ header svg {
 .building .container .blurb .blurb-childs {
   width: 48%;
 }
+.building .container .blurb .blurb-childs img {
+  width: 100%;
+}
 @media (max-width: 1240px) {
   .building .container .blurb .blurb-childs .image-wrap {
     height: 70%;
@@ -328,6 +339,14 @@ header svg {
 @media (max-width: 575px) {
   .building .container .blurb .welcome-home-wrap .welcome-home {
     flex-direction: column;
+  }
+}
+.building .container .blurb .welcome-home-wrap .welcome-home .image-wrap img {
+  width: 81.7%;
+}
+@media (max-width: 575px) {
+  .building .container .blurb .welcome-home-wrap .welcome-home .image-wrap img {
+    width: 100%;
   }
 }
 .building .container .blurb .welcome-home-wrap .welcome-home .welcome-content-wrap {
@@ -572,11 +591,6 @@ header svg {
 }
 .views .container .image-wrapper img {
   width: 100%;
-}
-@media (max-width: 575px) {
-  .views .container .image-wrapper img {
-    display: none;
-  }
 }
 .views .container .content-wrap .heading {
   margin-bottom: 54px;
@@ -1580,10 +1594,8 @@ footer .footer-wrap .icons a {
 footer .footer-wrap .icons .footer_logo {
   mix-blend-mode: screen;
 }
-@media (max-width: 1240px) {
-  footer .footer-wrap .icons .footer_logo_1 {
-    width: 80%;
-  }
+footer .footer-wrap .icons .footer_logo_1 {
+  width: 40px;
 }
 @media (max-width: 1240px) {
   footer .footer-wrap .icons .footer_logo_2 {
@@ -1712,6 +1724,14 @@ footer .footer-bottom-wrap .copy-right {
 }
 .popup.popup-active {
   display: flex;
+}
+
+.marker {
+  background-image: url("../images/new images/map-marker.png");
+  background-size: cover;
+  width: 80px;
+  height: 64px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,13 @@ html{
 @import './components/contact';
 @import './components/map';
 @import './components/footer';
-@import './components/popups'
+@import './components/popups';
 
-
+.marker {
+    background-image: url('../images/new images/map-marker.png');
+    background-size: cover;
+    width: 80px;
+    height: 64px;
+    cursor: pointer;
+}
 

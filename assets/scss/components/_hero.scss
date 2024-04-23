@@ -3,11 +3,19 @@
     margin-bottom: 74px;
     height: 75vh;
     overflow: hidden;
+    padding-top: 80px;
     @include responsive(sm){
         height: 50vh;
     }
     @include responsive(xs){
         height: 40vh;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(to right, rgba(0,0,0,0.3), transparent);
     }
     video{
         position: absolute;

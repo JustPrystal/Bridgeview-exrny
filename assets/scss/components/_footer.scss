@@ -104,9 +104,8 @@ footer{
                 mix-blend-mode: screen;
             }
             .footer_logo_1{
-                @include responsive(lg){
-                    width: 80%;
-                }
+                width: 40px;
+
                 // @include responsive(md){
                 //     width: 60%;
                 // }

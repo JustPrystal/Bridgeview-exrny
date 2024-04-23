@@ -49,6 +49,9 @@
             }
             .blurb-childs{
                 width: 48%;
+                img{
+                    width: 100%;
+                }
                 @include responsive(lg){
                     .image-wrap{
                         height: 70%;
@@ -78,6 +81,14 @@
                     }
                     @include responsive(xs){
                         flex-direction: column;
+                    }
+                    .image-wrap{
+                        img{
+                            width: 81.7%;
+                            @include responsive(xs){
+                                width: 100%;
+                            }
+                        }
                     }
                     .welcome-content-wrap{
                         max-width: 263px;
