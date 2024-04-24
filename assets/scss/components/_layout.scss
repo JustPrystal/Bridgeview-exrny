@@ -1,6 +1,7 @@
 .layout{
     background-color: #fbf4f0;
-    padding: 108px 0px 104px 0px;
+    padding: 108px 0px;
+    padding-bottom: 60px;
     .container{
         max-width: 1200px;
         margin: 0 auto;
@@ -131,6 +132,13 @@
                     }
                 }
             }
+        }
+        .notice{
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            margin-top: 70px;
+            opacity: 0.5;
+            font-size: 13px;
         }
     }
 }
