@@ -105,6 +105,7 @@
                     font-family: "Open Sans", sans-serif;
                     text-align: center;
                     line-height: 24px;
+                    text-align: justify;
                     color: #5A5D64;
                     @include responsive(md){
                         font-size: 12px;

@@ -1,5 +1,8 @@
 .views{
     margin-top: 144px;
+    @include responsive(sm){
+        margin-top:80px;
+    }
     .container{
         max-width: 1200px;
         margin: 0 auto;

@@ -4,12 +4,6 @@
     height: 75vh;
     overflow: hidden;
     padding-top: 80px;
-    @include responsive(sm){
-        height: 50vh;
-    }
-    @include responsive(xs){
-        height: 40vh;
-    }
     &::after{
         position: absolute;
         content: "";

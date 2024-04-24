@@ -82,10 +82,7 @@ footer{
             justify-content: flex-end;
             align-items: center;
             @include responsive(lg){
-                gap: 0px;
-            }
-            @include responsive(sm){
-                order:1;
+                gap: 20px;
             }
             a{
                 text-align: end;
@@ -102,28 +99,9 @@ footer{
             }
             .footer_logo{
                 mix-blend-mode: screen;
+                width:40px;
             }
-            .footer_logo_1{
-                width: 40px;
-
-                // @include responsive(md){
-                //     width: 60%;
-                // }
-                // @include responsive(sm){
-                //     width: 50%;
-                // }
-            }
-            .footer_logo_2{
-                @include responsive(lg){
-                    width: 75%;
-                }
-                // @include responsive(md){
-                //     width: 60%;
-                // }
-                // @include responsive(sm){
-                //     width: 50%;
-                // }
-            }
+            
         }
     }
     .footer-bottom-wrap{
@@ -134,7 +112,7 @@ footer{
         max-width:1200px;
         margin: 0 auto;
         justify-content: space-between;
-        @include responsive(sm){
+        @include responsive(md){
             flex-wrap:wrap;
             gap: 10px;
         }
@@ -142,8 +120,9 @@ footer{
             display: flex;
             align-items: center;
             gap: 20px;
-            @include responsive(md){
+            @include responsive(sm){
                 gap: 10px;
+                flex-wrap:wrap;
             }
             a{
                 text-decoration: none;
@@ -152,6 +131,22 @@ footer{
                 font-weight: 500;
                 font-family: "Open Sans", sans-serif;
                 cursor:pointer;
+                @include responsive(sm){
+                    flex: 0 0 100%;
+                }
+            }
+            .address{
+                display:flex;
+                align-items: center;
+                gap:5px;
+                svg{
+                    min-width:16px;
+                    height:16px;
+                    display:block;
+                }
+                @include responsive(sm){
+                    flex: 0 0 100%;
+                }
             }
         }
         .copy-right{

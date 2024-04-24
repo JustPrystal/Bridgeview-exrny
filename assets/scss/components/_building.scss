@@ -72,6 +72,9 @@
                 }
             }
             .welcome-home-wrap{
+                @include responsive(xs){
+                    order:1
+                }
                 .welcome-home{
                     @include responsive(lg){
                         width: 100%;
@@ -130,10 +133,14 @@
             .entertain-wrap{
                 display: flex;
                 align-items: flex-end;
-                margin-bottom: 20px;
+                margin-bottom: 190px;
                 @include responsive(lg){
+                    margin-bottom:20px;
                     display: unset;
                     align-items: unset;
+                }
+                @include responsive(xs){
+                    order:2
                 }
                 .entertain{
                     max-width: 456px;
@@ -179,10 +186,14 @@
                     justify-content: unset;
                     margin-top: 0px;
                 }
+                @include responsive(xs){
+                    order:4
+                }
                 .lobby{
                     max-width: 457px;
                     display: flex;
                     flex-direction: column-reverse;
+                    justify-content: flex-end;
                     @include responsive(lg){
                         max-width: unset;
                     }
@@ -229,6 +240,9 @@
                     display: unset;
                     justify-content: unset;
                     align-items: unset;
+                }
+                @include responsive(xs){
+                    order:3
                 }
                 .doorway{
                     max-width: 456px;

@@ -11,35 +11,43 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/new images/favicon.ico">
     <!-- Google Tag Manager -->
     <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NWZMPMCQ');
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NWZMPMCQ');
     </script>
-    <!-- End Google Tag Manager -->    
+    <!-- End Google Tag Manager -->
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    
-</head>
 
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWMTMPGWP5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CWMTMPGWP5');
+</script>
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWZMPMCQ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWZMPMCQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="header-wrap">
             <div class="logo-wrap">
-                <a href="#home"><img class="logo" src="./assets/images/new images/logo.png" alt=""></a>
+                <a href="#home"><img class="logo" src="./assets/images/new images/logo-bridgeview.svg" alt=""></a>
             </div>
             <div class="links-wrap">
                 <div class="links">
-                    <a href="#layout" class="link link-residences">Residences</a>
+                    <a href="#residences" class="link link-residences">Residences</a>
                     <a href="#amenities" class="link link-amenitites">Amenitites</a>
                     <a href="#neighborhood" class="link link-neighborhood">Neighborhood</a>
                     <a href="#contact" class="link link-contact">Contact</a>
@@ -60,13 +68,15 @@
         </div>
     </header>
     <section class="hero" id="home">
-        <video src="./assets/images/new images/hero_vid.mp4" autoplay loop muted poster="./assets/images/new images/hero-poster.png"></video>
+        <video autoplay loop muted playsinline preload="auto" poster="./assets/images/new images/hero-poster.png">
+            <source src="./assets/images/new images/hero_vid.mp4" type="video/mp4">
+        </video>
         <div class="container">
             <div class="content-wrap">
                 <h1>A New Outlook On Life</h1>
                 <p>Breathtaking views are just the beginning at Bridge View, DUMBO’s newest luxury apartment complex.
                 </p>
-                <a href="#">Explore Availabilities</a>
+                <a href="#residences">Explore Availabilities</a>
             </div>
         </div>
     </section>
@@ -108,9 +118,6 @@
                 </div>
                 <div class="lobby-wrap blurb-childs">
                     <div class="lobby">
-                        <div class="lobby-image-wrap image-wrap">
-                            <img src="./assets/images/new images/building/building (3).png" alt="">
-                        </div>
                         <div class="lobby-content-wrap content-wrap">
                             <h3>Relax Into Luxury</h3>
                             <p>Every unit includes spacious living areas that feature a comforting, modern aesthetic. 
@@ -121,12 +128,7 @@
                 <div class="doorway-wrap blurb-childs">
                     <div class="doorway">
                         <div class="doorway-image-wrap image-wrap">
-                            <img src="./assets/images/new images/building/building (4).jpg" alt="">
-                        </div>
-                        <div class="doorway-content-wrap content-wrap">
-                            <h3>Relax Into Luxury</h3>
-                            <p>Every unit includes spacious living areas that feature a comforting, modern aesthetic. 
-                            </p>
+                            <img src="./assets/images/new images/building/building (3).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -191,7 +193,7 @@
                     <p>Little ones can let their imaginations run wild Bridge View’s dedicated kid’s room. </p>
                 </div>
                 <div class="laundry first-row rooms">
-                    <img src="./assets/images/new images/amenities/laundry.jpg" alt="">
+                    <img src="./assets/images/new images/coming-soon.jpg" alt="">
                     <h3>Laundry Room</h3>
                     <p>A Laundry Room located just steps from your front door adds an extra level of convenience. </p>
                 </div>
@@ -214,7 +216,7 @@
                         worktables, and separate spaces for taking meetings or calls.</p>
                 </div>
                 <div class="gym last-row rooms">
-                    <img src="./assets/images/new images/amenities/gym.png" alt="">
+                    <img src="./assets/images/new images/coming-soon.jpg" alt="">
                     <h3>Gym</h3>
                     <p>An on-site Fitness Facility allows you to achieve your goals no matter your work schedule. </p>
                 </div>
@@ -271,11 +273,11 @@
             </div>
         </div>
     </section>
-    <section class="layout" id="layout">
+    <section class="layout" id="residences">
         <div class="container">
             <div class="content-wrap">
                 <div class="heading">
-                    <h2>Layout</h2>
+                    <h2>Residences</h2>
                 </div>
                 <p>Enjoy captivating panoramas of the Manhattan skyline and other iconic New York landmarks from the
                     comfort of home. Bridge View offers city views that will continually leave you breathless. </p>
@@ -283,21 +285,21 @@
             <div class="layouts">
                 <div class="studio room">
                     <img src="./assets/images/new images/layout/layout (1).jpg" alt="">
-                    <h3>STUDIO</h3>
+                    <h3>STUDIOS</h3>
                     <p class="price-tag">STARTING at $4,000</p>
                     <p>These large, bright Studio apartments offer plenty of room for working, resting, and even
                         entertaining.</p>
                 </div>
                 <div class="one-bedroom room">
                     <img src="./assets/images/new images/layout/layout (2).jpg" alt="">
-                    <h3>ONE BEDROOM</h3>
+                    <h3>ONE BEDROOMS</h3>
                     <p class="price-tag">STARTING at $5,227</p>
                     <p>Modern design elements and thoughtfully designed layouts make these One-Bedroom Brooklyn
                         apartments ideal for anyone. </p>
                 </div>
                 <div class="two-bedroom room">
                     <img src="./assets/images/new images/layout/layout (3).jpg" alt="">
-                    <h3>TWO BEDROOM</h3>
+                    <h3>TWO BEDROOMS</h3>
                     <p class="price-tag">STARTING at $7,377</p>
                     <p>Experience unparalleled luxury and plenty of extra space in Bridge View’s expansive Two-Bedroom
                         apartments.  </p>
@@ -359,7 +361,8 @@
                             </g>
                         </svg>
                         <label for="phone_number"><strong>Phone Number</strong></label>
-                        <input class="form-control-input" type="text" placeholder="Your Phone..." name="phone_number" />
+                        <input class="form-control-input" type="tel" placeholder="Your Phone..." name="phone_number"
+                            id="input_phone" pattern="[0-9\-]*" />
                     </div>
                 </div>
                 <div class="field-group center-fields">
@@ -374,11 +377,12 @@
                                     fill="#6B7280" />
                             </g>
                         </svg>
-                        <label for="layout"><strong>Available Apartments</strong></label>
+                        <label for="layout"><strong>Apartment Styles</strong></label>
                         <select class="form-control-input" name="layout">
-                            <option value="1-bed">1 Bed</option>
-                            <option value="2-bed">2 Beds</option>
-                            <option value="studio">Studio</option>
+                            <option value="" disabled selected>Choose layout</option>
+                            <option value="studio">Studio ($4,000+)</option>
+                            <option value="1-bed">1 Bedroom ($5,227+)</option>
+                            <option value="2-bed">2 Bedroom ($7,337+)</option>
                         </select>
                     </div>
                     <div class="movein-date">
@@ -410,7 +414,9 @@
             </form>
             <div class="link-to-apply">
                 <p>Looking for a link to apply?</p>
-                <a href=" https://www.exrny.com/apply?utm_source=bridgeview.exr.com&utm_medium=referral&utm_campaign=landing_pages">Click Here</a>
+                <a
+                    href=" https://www.exrny.com/apply?utm_source=bridgeview.exr.com&utm_medium=referral&utm_campaign=landing_pages">Click
+                    Here</a>
             </div>
         </div>
         <template id="thank-you-template">
@@ -422,46 +428,64 @@
         </template>
     </section>
     <section class="map" id="map">
-        <iframe width='100%' height='600px' src="https://api.mapbox.com/styles/v1/exrlandings/clvbmuyxp00wm01pkdszg5y5g.html?title=false&access_token=pk.eyJ1IjoiZXhybGFuZGluZ3MiLCJhIjoiY2x2Ym1paXF4MDRqNzJrbGhldDdzbzY2ZiJ9._NRv4-LW-AwL86_e3jKrLg&zoomwheel=false#15.15/40.702411/-73.988989" title="BridgeView" style="border:none;"></iframe>
+        <iframe width='100%' height='600px'
+            src="https://api.mapbox.com/styles/v1/exrlandings/clvbmuyxp00wm01pkdszg5y5g.html?title=false&access_token=pk.eyJ1IjoiZXhybGFuZGluZ3MiLCJhIjoiY2x2Ym1paXF4MDRqNzJrbGhldDdzbzY2ZiJ9._NRv4-LW-AwL86_e3jKrLg&zoomwheel=false#15.15/40.702411/-73.988989"
+            title="BridgeView" style="border:none;"></iframe>
     </section>
     <footer>
         <div class="footer-wrap">
             <div class="logo-wrap">
-                <a href="#"><img src="./assets/images/new images/logo.png" alt="" class="logo"></a>
+                <a href="#"><img src="./assets/images/new images/logo-bridgeview.svg" alt="" class="logo"></a>
             </div>
             <div class="links">
                 <a href="#home" class="link link-home">Home</a>
-                <a href="#layout" class="link link-residences">Residences</a>
+                <a href="#residences" class="link link-residences">Residences</a>
                 <a href="#amenities" class="link link-amenitites">Amenitites</a>
                 <a href="#neighborhood" class="link link-neighborhood">Neighborhood</a>
                 <a href="#contact" class="link link-contact">Contact</a>
             </div>
             <div class="icons">
-                <a ><img class="footer_logo_1 footer_logo" src="./assets/images/new images/footer/logo-eh-5aa733547b 1.svg" alt=""></a>
-                <a href="https://www.bridgeview.exrny.com./?utm_source=website&utm_medium=referral&utm_campaign=exr_logo"><img class="footer_logo_2 footer_logo" src="./assets/images/new images/footer_logo_2.png" alt=""></a>
+                <a><img class="footer_logo_1 footer_logo"
+                        src="./assets/images/new images/footer/logo-eh-5aa733547b 1.svg" alt=""></a>
+                <a
+                    href="https://www.exrny.com./?utm_source=website&utm_medium=referral&utm_campaign=exr_logo"><img
+                        class="footer_logo_2 footer_logo" src="./assets/images/new images/logo_exr.svg" alt=""></a>
             </div>
         </div>
         <div class="footer-bottom-wrap">
+           
             <div class="links">
+                <div class="address">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="#97301F" d="M128 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.17 83.41 134.55a8 8 0 0 0 9.18 0C136 236.17 216 179.3 216 104a88.1 88.1 0 0 0-88-88m0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32"/></svg>
+                    <a href="https://www.google.com/maps/place/69+Adams+St,+Brooklyn,+NY+11201,+USA/data=!4m2!3m1!1s0x89c25a33e4d41721:0xc998050650fdee6d?sa=X&ved=1t:242&ictx=111" target="_blank">
+                        69 Adams St, Brooklyn, NY 11201
+                    </a>
+                </div>
                 <a data-popup="#popup-fair-housing-notice">Fair Housing Notice</a>
                 <a data-popup="#popup-accessibility">Accessibility</a>
             </div>
             <div class="copy-right">
-                <p>COPYRIGHT © 2024 EXR NEW DEVELOPMENT.ALL RIGHTS RESERVED</p>
+                <p>COPYRIGHT © 2024 EXR NEW DEVELOPMENT. ALL RIGHTS RESERVED</p>
             </div>
         </div>
 
         <div class="popup" id="popup-fair-housing-notice">
             <div class="popup-content">
-                <h4>FAIR HOUSING STATEMENT</h4> 
+                <h4>FAIR HOUSING STATEMENT</h4>
                 <p>
-                    EXR complies fully with local, state and federal fair housing laws against discrimination on the basis of race, color, religion, sex, national origin, handicap, age, marital status and/or familial status, children or other prohibited factors.
+                    EXR complies fully with local, state and federal fair housing laws against discrimination on the
+                    basis of race, color, religion, sex, national origin, handicap, age, marital status and/or familial
+                    status, children or other prohibited factors.
                 </p>
                 <h4>
                     THE CIVIL RIGHTS ACT OF 1968
                 </h4>
                 <p>
-                    The Civil Rights Act of 1968 known as the Federal Fair Housing Law makes illegal any discrimination based on race, color, religion, sex or national origin in connection with the sale or rental of housing. The 1988 amendment to this Act (The Fair Housing Amendments Act of 1988) expands the coverage of this law to handicapped persons and families with children. EXR complies fully with State and local statutes and Federal Fair Housing laws.
+                    The Civil Rights Act of 1968 known as the Federal Fair Housing Law makes illegal any discrimination
+                    based on race, color, religion, sex or national origin in connection with the sale or rental of
+                    housing. The 1988 amendment to this Act (The Fair Housing Amendments Act of 1988) expands the
+                    coverage of this law to handicapped persons and families with children. EXR complies fully with
+                    State and local statutes and Federal Fair Housing laws.
                 </p>
                 <h4>
                     LINKS
@@ -481,120 +505,54 @@
             <div class="popup-content">
                 <h4>ACCESSIBILITY</h4>
                 <p>
-                    We are striving to meet online usability and design requirements recommended by the World Wide Web Consortium (W3C) in its Web Content Accessibility Guidelines 2.0 Level AA, as well as requirements under the Twenty-First Century Communications and Video Accessibility Act of 2010. We are using design standards that help customers identify, interpret, understand and interact with information presented on our websites and mobile apps.
+                    We are striving to meet online usability and design requirements recommended by the World Wide Web
+                    Consortium (W3C) in its Web Content Accessibility Guidelines 2.0 Level AA, as well as requirements
+                    under the Twenty-First Century Communications and Video Accessibility Act of 2010. We are using
+                    design standards that help customers identify, interpret, understand and interact with information
+                    presented on our websites and mobile apps.
                 </p>
                 <p>
                     Here are some helpful tips for using our sites and apps:
                 </p>
                 <ul>
                     <li>
-                        Account numbers: In most instances, you won’t see your complete account number online. For security reasons, we’ll only reveal a few digits (typically the last 3 or 4) of your account number. The remaining digits are represented by a series of periods or the letter X.
+                        Account numbers: In most instances, you won’t see your complete account number online. For
+                        security reasons, we’ll only reveal a few digits (typically the last 3 or 4) of your account
+                        number. The remaining digits are represented by a series of periods or the letter X.
                     </li>
                     <li>
-                        Dollar amounts: Please don’t use the dollar sign ($) when you include dollar amounts in any form field; it will cause an error. When you include dollar amounts, you may see one input field or two fields separated by a decimal point. In some cases, you’ll find an example adjacent to the input field(s) to help you understand how to format your amount.
+                        Dollar amounts: Please don’t use the dollar sign ($) when you include dollar amounts in any form
+                        field; it will cause an error. When you include dollar amounts, you may see one input field or
+                        two fields separated by a decimal point. In some cases, you’ll find an example adjacent to the
+                        input field(s) to help you understand how to format your amount.
                     </li>
                     <li>
-                        JavaScript: Is enabled by default in modern web browsers, if you disable it you won’t be able to enjoy all of the features of our site. Software and Reccomendation Settings:
+                        JavaScript: Is enabled by default in modern web browsers, if you disable it you won’t be able to
+                        enjoy all of the features of our site. Software and Reccomendation Settings:
                     </li>
                 </ul>
                 <p>
-                    We follow the W3C’s globally recognized standards to provide content that’s compatible with the most popular assistive technologies and web browsers. We recommend using the most current version (or the version released just prior to) of manufacturer’s assistive technology applications, along with a current version of the browsers listed below. Try different types of browsers with assistive technology applications to determine which combination works best for you.
+                    We follow the W3C’s globally recognized standards to provide content that’s compatible with the most
+                    popular assistive technologies and web browsers. We recommend using the most current version (or the
+                    version released just prior to) of manufacturer’s assistive technology applications, along with a
+                    current version of the browsers listed below. Try different types of browsers with assistive
+                    technology applications to determine which combination works best for you.
                 </p>
                 <p>
-                    Please go to the individual manufacturer’s site for information about how to obtain them. You may also have access to assistance from local and state agencies or non-profit groups in your area
+                    Please go to the individual manufacturer’s site for information about how to obtain them. You may
+                    also have access to assistance from local and state agencies or non-profit groups in your area
                 </p>
                 <div class="popup-close"></div>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://www.exrny.com/assets/inquiry.js?source=bridgeview.exrny.com"></script>
     <script src="./assets/js/popup.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".hamburger").click(function () {
-                $(".links-wrap").stop().slideToggle()
-            })
-            $(window).resize(function () {
-                if ($(this).innerWidth() > 767) {
-                    $(".links-wrap").css("display", "block")
-                } else {
-                    $(".links-wrap").css("display", "none")
-                }
-            })
-        })
-
-
-        //----------------------
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZXhybGFuZGluZ3MiLCJhIjoiY2x2Ym1paXF4MDRqNzJrbGhldDdzbzY2ZiJ9._NRv4-LW-AwL86_e3jKrLg';
-        const center = [-73.990749, 40.7025219]
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/exrlandings/clvbmuyxp00wm01pkdszg5y5g',
-            center: center,
-            zoom: 15,
-            scrollZoom      : false,
-            doubleClickZoom : false
-        });
-        const geojson = {
-            'type': 'FeatureCollection',
-            'features': [
-            {
-                'type': 'Feature',
-                'geometry': {
-                'type': 'Point',
-                'coordinates': center
-                },
-                'properties': {
-                'title': 'Mapbox',
-                'description': 'Washington, D.C.'
-                }
-            }
-            ]
-        };
-
-
-        map.addControl(new mapboxgl.NavigationControl())
-        // add markers to map
-        for (const feature of geojson.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker';
-
-        // make a marker for each feature and add to the map
-        new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
-        
-        }
-        
-        
-        /*
-        Add an event listener that runs
-        when a user clicks on the map element.
-        */
-        map.on('click', (event) => {
-        // If the user clicked on one of your markers, get its information.
-        const features = map.queryRenderedFeatures(event.point, {
-            layers: ['pois'] // replace with your layer name
-        });
-        if (!features.length) {
-            return;
-        }
-        const feature = features[0];
-
-        /*
-            Create a popup, specify its options
-            and properties, and add it to the map.
-        */
-        const popup = new mapboxgl.Popup({ offset: [0, -15] })
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML(
-            `<h3>${feature.properties.title}</h3>`
-        )
-        .addTo(map);
-        });
-    </script>
-
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/map.js"></script>
 </body>
 
 </html>

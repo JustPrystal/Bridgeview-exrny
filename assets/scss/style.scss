@@ -28,10 +28,11 @@ html{
 @import './components/popups';
 
 .marker {
-    background-image: url('../images/new images/map-marker.png');
+    background-image: url('../images/new images/map-marker.svg');
     background-size: cover;
-    width: 80px;
+    width: 96px;
     height: 64px;
+    opacity:1 !important;
     cursor: pointer;
 }
 
